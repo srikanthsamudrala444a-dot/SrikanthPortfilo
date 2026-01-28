@@ -1,0 +1,207 @@
+/* Contact Section */
+.contact {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.5), rgba(30, 41, 59, 0.5));
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+/* Contact Message */
+.contact-message {
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-message h3 {
+  font-size: 1.8rem;
+  color: var(--accent-light);
+  margin-bottom: var(--spacing-md);
+  font-weight: 700;
+}
+
+.contact-message p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* Contact Methods Grid */
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  width: 100%;
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-card {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(96, 165, 250, 0.05));
+  border: 2px solid var(--border-color);
+  border-radius: 16px;
+  padding: var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  text-decoration: none;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.2), transparent);
+  transition: left var(--transition-normal);
+}
+
+.contact-card:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(59, 130, 246, 0.3);
+}
+
+.contact-card:hover::before {
+  left: 100%;
+}
+
+/* Icon */
+.contact-card .icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  transition: transform var(--transition-normal);
+  position: relative;
+  z-index: 1;
+}
+
+.contact-card:hover .icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Contact Info */
+.contact-info {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-info h4 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-xs);
+  font-weight: 600;
+}
+
+.contact-info p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.contact-card .arrow {
+  color: var(--accent-light);
+  font-size: 1.3rem;
+  transition: all var(--transition-normal);
+  position: relative;
+  z-index: 1;
+}
+
+.contact-card:hover .arrow {
+  color: var(--accent-color);
+  transform: translateX(5px);
+}
+
+/* Resume Section */
+.resume-section {
+  text-align: center;
+  padding-top: var(--spacing-xl);
+  border-top: 2px solid var(--border-color);
+  width: 100%;
+}
+
+.resume-section h3 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+  font-weight: 600;
+}
+
+.resume-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent-light), var(--accent-color));
+  color: white;
+  padding: 14px 40px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all var(--transition-normal);
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.3);
+}
+
+.resume-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 48px rgba(59, 130, 246, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-message h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    padding: var(--spacing-md);
+  }
+
+  .contact-card .icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-message h3 {
+    font-size: 1.3rem;
+  }
+
+  .contact-message p {
+    font-size: 0.9rem;
+  }
+
+  .contact-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-card .arrow {
+    display: none;
+  }
+
+  .resume-btn {
+    width: 100%;
+    padding: 12px 32px;
+  }
+}

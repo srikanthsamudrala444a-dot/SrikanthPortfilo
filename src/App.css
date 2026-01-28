@@ -1,0 +1,30 @@
+/* App Container */
+.app {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--bg-dark);
+  overflow-x: hidden;
+}
+
+/* Main Sections */
+section {
+  padding: var(--spacing-xl) 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+/* Responsive Sections */
+@media (max-width: 768px) {
+  section {
+    padding: var(--spacing-lg) 0;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: var(--spacing-md) 0;
+  }
+}
