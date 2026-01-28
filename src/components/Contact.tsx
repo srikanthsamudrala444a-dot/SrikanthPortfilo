@@ -54,7 +54,7 @@ function Contact() {
 
             {/* GitHub */}
             <a 
-              href="https://github.com/srikanthsamudrala444a" 
+              href="https://github.com/srikanthsamudrala444a-dot" 
               target="_blank"
               rel="noopener noreferrer"
               className="contact-card github"
@@ -64,7 +64,7 @@ function Contact() {
               </div>
               <div className="contact-info">
                 <h4>GitHub</h4>
-                <p>srikanthsamudrala444a</p>
+                <p>srikanthsamudrala444a-dot</p>
               </div>
               <span className="arrow">→</span>
             </a>

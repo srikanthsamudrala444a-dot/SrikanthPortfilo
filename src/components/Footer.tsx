@@ -48,7 +48,7 @@ function Footer() {
                 <FiLinkedin />
               </a>
               <a 
-                href="https://github.com/srikanthsamudrala444a" 
+                href="https://github.com/srikanthsamudrala444a-dot" 
                 target="_blank"
                 rel="noopener noreferrer"
                 title="GitHub"

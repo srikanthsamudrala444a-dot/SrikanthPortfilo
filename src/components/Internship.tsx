@@ -24,7 +24,7 @@ function Internship() {
   return (
     <section id="internship" className="internship">
       <div className="container">
-        <h2 className="section-title">Internship Experience</h2>
+        <h2 className="section-title">Professional Experience</h2>
         
         <div className="internship-card fade-in-up">
           {/* Header */}
@@ -32,7 +32,7 @@ function Internship() {
             <div>
               <h3 className="position">{internshipData.title}</h3>
               <p className="company">{internshipData.company}</p>
-              <p className="period">{internshipData.period}</p>
+              <p className="period">Fresher | {internshipData.period}</p>
             </div>
           </div>
 
@@ -64,6 +64,18 @@ function Internship() {
                 </span>
               ))}
             </div>
+          </div>
+
+          {/* Project Link */}
+          <div className="project-link">
+            <a 
+              href="https://trans-admin-web.onrender.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="view-project-btn"
+            >
+              View Live Project →
+            </a>
           </div>
         </div>
       </div>

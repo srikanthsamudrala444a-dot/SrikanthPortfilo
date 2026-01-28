@@ -98,6 +98,17 @@
   line-height: 1.6;
 }
 
+.score {
+  font-size: 0.95rem;
+  color: var(--accent-light);
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+  padding: 6px 12px;
+  background: rgba(59, 130, 246, 0.15);
+  border-left: 3px solid var(--accent-color);
+  border-radius: 4px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .education-timeline::before {

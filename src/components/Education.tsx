@@ -11,6 +11,7 @@ function Education() {
       degree: "M.Tech in Computer Science and Engineering",
       institution: "Anurag University",
       period: "2024–2026",
+      cgpa: "7.8",
       description: "Advanced studies in computer science with focus on software engineering and modern technologies."
     },
     {
@@ -18,6 +19,7 @@ function Education() {
       degree: "B.Tech in Computer Science and Engineering",
       institution: "Anurag University",
       period: "2020–2024",
+      cgpa: "8.23",
       description: "Strong foundation in computer science fundamentals, data structures, algorithms, and database design."
     },
     {
@@ -25,6 +27,7 @@ function Education() {
       degree: "Intermediate (MPC)",
       institution: "Narayana Junior College",
       period: "2018–2020",
+      percentage: "94.6%",
       description: "Mathematics, Physics, and Chemistry specialization preparing for technical education."
     },
     {
@@ -32,6 +35,7 @@ function Education() {
       degree: "Secondary Education (SSC)",
       institution: "Ekashila High School",
       period: "2018",
+      cgpa: "9.2",
       description: "General education with strong academic foundation."
     }
   ]
@@ -53,6 +57,8 @@ function Education() {
                 <h3 className="degree">{edu.degree}</h3>
                 <p className="institution">{edu.institution}</p>
                 <p className="period">{edu.period}</p>
+                {edu.cgpa && <p className="score"><strong>CGPA:</strong> {edu.cgpa}</p>}
+                {edu.percentage && <p className="score"><strong>Percentage:</strong> {edu.percentage}</p>}
                 <p className="description">{edu.description}</p>
               </div>
             </div>

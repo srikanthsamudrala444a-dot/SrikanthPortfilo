@@ -21,7 +21,7 @@ function Hero() {
             <div className="greeting">Hi, I'm</div>
             <h1 className="hero-title">Srikanth Samudrala</h1>
             <p className="hero-subtitle">
-              Software Engineer | Full Stack & Angular Developer
+              Software Engineer | Full Stack Developer | Fresher
             </p>
             <p className="hero-description">
               Building scalable, clean, and user-friendly applications with modern technologies.
