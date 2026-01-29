@@ -1,4 +1,4 @@
-import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiMail, FiInstagram } from 'react-icons/fi'
 import './Footer.css'
 
 /**
@@ -17,7 +17,7 @@ function Footer() {
           <div className="footer-brand">
             <div className="footer-logo">SS</div>
             <h3>Srikanth Samudrala</h3>
-            <p>Software Engineer | Full Stack & Angular Developer</p>
+            <p>Software Engineer | Full Stack Developer | Fresher</p>
           </div>
 
           {/* Quick Links */}
@@ -55,6 +55,15 @@ function Footer() {
                 className="social-icon"
               >
                 <FiGithub />
+              </a>
+              <a 
+                href="https://www.instagram.com/srikanth__samudrala_/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Instagram"
+                className="social-icon"
+              >
+                <FiInstagram />
               </a>
             </div>
           </div>

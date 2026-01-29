@@ -41,11 +41,11 @@ function About() {
             {/* Quick Stats */}
             <div className="stats">
               <div className="stat-card">
-                <h4 className="stat-number">2+</h4>
+                <h4 className="stat-number">Fresher</h4>
                 <p>Years of Experience</p>
               </div>
               <div className="stat-card">
-                <h4 className="stat-number">5+</h4>
+                <h4 className="stat-number">3+</h4>
                 <p>Projects Completed</p>
               </div>
               <div className="stat-card">
